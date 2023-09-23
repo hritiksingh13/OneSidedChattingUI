@@ -1,0 +1,167 @@
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.column {
+  width: 325px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+  padding: 8px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  gap: 16px;
+  height: 65px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  font-size: 13px;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.row1 > p,
+.row2 > p {
+  margin: 0;
+}
+
+.reply {
+  position: relative;
+  padding-left: 20px;
+}
+
+.deleteChat {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.editChat {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.replyChat {
+  background-color: transparent;
+  border: none;
+  color: skyblue;
+  cursor: pointer;
+}
+
+body {
+  background: #e2e1e0;
+}
+
+.commentBox {
+  height: 32px;
+  font-size: 16px;
+  position: fixed;
+  right: 150px;
+  bottom: 30px;
+  z-index: 10;
+}
+
+.commentButton {
+  background-color: #1976d2;
+  z-index: 10;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: #fff;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px #0000000b;
+  white-space: nowrap;
+  height: 39px;
+  cursor: pointer;
+  width: 110px;
+}
+
+.commentButton:active {
+  font-size: 13px;
+}
+
+.replyBox {
+  height: 25px;
+  font-size: 16px;
+  border-style: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+}
+
+.replyButton {
+  background-color: #1976d2;
+  margin: 8px;
+  color: #fff;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+  height: 29px;
+  cursor: pointer;
+  width: 80px;
+}
+
+.replyElement {
+  display: flex;
+  align-items: center;
+}
+
+.messageBox {
+  background: transparent;
+  font-size: 14px;
+  color: black;
+  height: 20px;
+}
+
+.messageContent {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.messageUpdate {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+  height: 26px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chatSection {
+  position: relative;
+  margin-bottom: 80px;
+}
